@@ -23,8 +23,7 @@ def get_time_param():
 def create_file():
     #parameters
     time_param = get_time_param()
-    today = date.today()
-    yesterday = today - datetime.timedelta(days=1)
+    yesterday = date.today() - datetime.timedelta(days=1)
 
     #create wind file and request wind data
     wind_file = open(str(yesterday)+'_wind.txt', 'w')
